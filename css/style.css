@@ -1,0 +1,298 @@
+body {
+	font-family: 'Inter', sans-serif;
+	font-weight: 700;
+	font-size: 14px;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, hsl(225, 100%, 98%)), color-stop(80%, #fff));
+	background: -o-linear-gradient(top, hsl(225, 100%, 98%) 20%, #fff 80%);
+	background: linear-gradient(to bottom, hsl(225, 100%, 98%) 20%, #fff 80%)
+}
+*, h1, h2 {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+.container {
+	width: 100%;
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+.row {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+}
+header .row {
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	padding: 30px 0;
+}
+@media (max-width: 600px) {
+	header .row {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-align: stretch;
+		    -ms-flex-align: stretch;
+		        align-items: stretch;
+	}
+	.modo-escuro {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
+		padding-top: 20px;
+		margin-top: 25px;
+		border-top: 1px solid #bbb
+	}
+	.dark .modo-escuro {
+		border-color: hsl(228, 12%, 44%)
+	}
+}
+.btn {
+	background: hsl(230, 22%, 74%);
+	border: none;
+	width: 44px;
+	height: 22px;
+	cursor: pointer;
+	border-radius: 14px;
+	vertical-align: middle;
+	margin-left: 6px;
+	position: relative;
+}
+.btn::after {
+	content: '';
+	background: hsl(225, 100%, 98%);
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	border-radius: 8px;
+	top: 3px;
+	right: 3px
+}
+
+/* Tipografia */
+h1, h2 {
+	font-size: 28px;
+	
+}
+h2 {
+	font-size: 22px;
+	color: hsl(228, 12%, 44%);
+	margin: 30px 0 10px 0
+}
+p, span {
+	color: hsl(228, 12%, 44%);
+}
+a {
+	text-decoration: none;
+}
+.success {
+	color: hsl(163, 72%, 41%)
+}
+.success::before {
+	content: '';
+	border: 4px solid transparent;
+	border-bottom-color: hsl(163, 72%, 41%);
+	margin-bottom: 2px;
+	display: inline-block;
+	margin-right: 4px
+}
+.danger {
+	color: hsl(356, 69%, 56%);
+}
+.danger::before {
+	content: '';
+	border: 4px solid transparent;
+	border-top-color: hsl(356, 69%, 56%);
+	border-bottom-width: 2px;
+	display: inline-block;
+	margin-right: 4px
+}
+.fa-facebook-square {
+	color: hsl(208, 92%, 53%)
+}
+.fa-twitter {
+	color: hsl(203, 89%, 53%)
+}
+.fa-instagram {
+	background: -webkit-gradient(linear, left top, right top, from(hsl(37, 97%, 70%)), to(hsl(329, 70%, 58%)));
+	background: -o-linear-gradient(left, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+	background: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+	color: transparent;
+	-webkit-background-clip: text;
+	        background-clip: text
+}
+.fa-youtube-square {
+	color: hsl(348, 97%, 39%);
+}
+.fab {
+	font-size: 19px;
+	vertical-align: middle;
+	margin-right: 3px
+}
+
+/* Cards */
+.cards {
+	margin: 0 -10px
+}
+.card {
+	width: 25%;
+	padding: 13px;
+}
+.card div {
+	background: hsl(227, 47%, 96%);
+	padding: 30px;
+	text-align: center;
+	font-size: 12px;
+	border-radius: 5px;
+}
+.card div:hover {
+	background: hsl(230, 22%, 90%)
+}
+.card span {
+	display: block;
+}
+.n1 {
+	font-size:50px;
+	color: black;
+	margin-top: 20px
+}
+.n2 {
+	font-size: 30px;
+	color: black;
+}
+.segui {
+	text-transform: uppercase;
+	font-weight: 400;
+	letter-spacing: 4px;
+	margin-bottom: 20px
+}
+.facebook, .twitter, .instagram, .youtube {
+	border-top: 4px solid hsl(208, 92%, 53%)
+}
+.twitter {
+	border-color: hsl(203, 89%, 53%);
+}
+.instagram {
+	position: relative;
+	overflow: hidden;
+	border: none;
+	padding-top: 34px !important
+}
+.instagram::before {
+	content: '';
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-top: 4px solid;
+	-o-border-image: -o-linear-gradient(left, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+	   border-image: -webkit-gradient(linear, left top, right top, from(hsl(37, 97%, 70%)), to(hsl(329, 70%, 58%)));
+	   border-image: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+	border-image-slice: 1
+}
+.youtube {
+	border-color: hsl(348, 97%, 39%)
+}
+@media (max-width: 800px) {
+	.card {
+		width: 50%
+	}
+}
+@media (max-width: 600px) {
+	.card {
+		width: 100%
+	}
+}
+
+/* Cards Visão Geral */
+.visao .card div {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: baseline;
+	    -ms-flex-align: baseline;
+	        align-items: baseline;
+	padding: 12px 25px;
+	padding-top: 18px
+}
+.visao span {
+	margin: 10px 0;
+	width: 50%;
+	text-align: left;
+	padding: 0;
+}
+.icon {
+	width: auto !important;
+	margin-left: auto;
+}
+.visao .success, .visao .danger {
+	text-align: right;
+}
+
+footer {
+	padding: 40px 0 20px 0;
+	font-size: 14px;
+	text-align: center;
+	font-weight: 400
+}
+footer a {
+	text-decoration: underline;
+	color: hsl(228, 12%, 44%)
+}
+
+/* Modo Noite */
+*, .btn::after {
+	-webkit-transition: all .2s;
+	-o-transition: all .2s;
+	transition: all .2s
+}
+.dark {
+	background: -webkit-gradient(linear,left top, left bottom,color-stop(20%, hsl(232, 19%, 15%)), color-stop(80%, hsl(230, 17%, 14%)));
+	background: -o-linear-gradient(top,hsl(232, 19%, 15%) 20%, hsl(230, 17%, 14%) 80%);
+	background: linear-gradient(to bottom,hsl(232, 19%, 15%) 20%, hsl(230, 17%, 14%) 80%);
+	color: white;
+}
+.dark h2, .dark .n1, .dark .n2 {
+	color: white
+}
+.dark .card div {
+	background: hsl(228, 28%, 20%)
+}
+.dark .card div:hover {
+	background: hsl(228, 28%, 27%)
+}
+.dark p, .dark span, .dark footer a {
+	color: hsl(228, 34%, 66%)	
+}
+.dark .success {
+	color: hsl(163, 72%, 41%)
+}
+.dark .danger {
+	color: hsl(356, 69%, 56%);
+}
+.dark .btn {
+	background: -webkit-gradient(linear, left top, right top, from(hsl(210, 78%, 56%)), to(hsl(146, 68%, 55%)));
+	background: -o-linear-gradient(left, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+	background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%))
+}
+.dark .btn::after {
+	background: hsl(228, 28%, 20%);
+	right: 25px
+}

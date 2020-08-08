@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"> 
+    <!-- Normalize -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <!-- Estilo -->
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+    <title>Painel de mídia social</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div>
+                    <h1>Painel de mídia social</h1>
+                    <p>Total de seguidores: 23,004</p>
+                </div>
+                <div class="modo-escuro">
+                    <span>Modo escuro</span>
+                    <button type="button" onclick="dark()" aria-label="Modo escuro" class="btn"></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container"><!-- Container -->
+        <div class="row cards"><!-- Cards -->
+            <div class="card"><!-- Card -->
+                <a href="#">
+                    <div class="facebook">
+                        <span><i class="fab fa-facebook-square"></i>
+                        @nathanf</span>
+                        <span class="n1">1987</span>
+                        <span class="segui">Seguidores</span>
+                        <span class="success">12 Hoje</span>
+                    </div>
+                </a>
+            </div><!--/ Card -->
+            <div class="card"><!-- Card -->
+                <a href="#">
+                    <div class="twitter">
+                        <span><i class="fab fa-twitter"></i>
+                        @nathanf</span>
+                        <span class="n1">1044</span>
+                        <span class="segui">Seguidores</span>
+                        <span class="success">99 Hoje</span>
+                    </div>
+                </a>
+            </div><!--/ Card -->
+            <div class="card"><!-- Card -->
+                <a href="#">
+                    <div class="instagram">
+                        <span><i class="fab fa-instagram"></i>
+                        @realnathanf</span>
+                        <span class="n1">11k</span>
+                        <span class="segui">Seguidores</span>
+                        <span class="success">1099 Hoje</span>
+                    </div>
+                </a>
+            </div><!--/ Card -->
+            <div class="card"><!-- Card -->
+                <a href="#">
+                    <div class="youtube">
+                        <span><i class="fab fa-youtube-square"></i>
+                        Nathan F.</span>
+                        <span class="n1">8239</span>
+                        <span class="segui">Inscritos</span>
+                        <span class="danger">144 Hoje</span>
+                    </div>
+                </a>
+            </div><!--/ Card -->
+        </div><!--/ Cards -->
+        <h2>Visão Geral - Hoje</h2>
+        <div class="row cards visao"><!-- Cards -->
+            <div class="card"><!-- Card -->
+                <a href="#">
+                    <div>
+                        <span>Page Views</span>
+                        <span class="icon"><i class="fab fa-facebook-square"></i></span>
+                        <span class="n2">87</span>
+                        <span class="success">3%</span>
+                    </div>
+                </a>
+            </div><!--/ Card -->
+            <div class="card"><!-- Card -->
+                <a href="#">
+                    <div>
+                        <span>Curtidas</span>
+                        <span class="icon"><i class="fab fa-facebook-square"></i></span>
+                        <span class="n2">52</span>
+                        <span class="danger">2%</span>
+                    </div>
+                </a>
+            </div><!--/ Card -->
+            <div class="card"><!-- Card -->
+                <a href="#">
+                    <div>
+                        <span>Curtidas</span>
+                        <span class="icon"><i class="fab fa-instagram"></i></span>
+                        <span class="n2">5462</span>
+                        <span class="success">2257%</span>
+                    </div>
+                </a>
+            </div><!--/ Card -->
+            <div class="card"><!-- Card -->
+                <a href="#">
+                    <div>
+                        <span>Profile Views</span>
+                        <span class="icon"><i class="fab fa-instagram"></i></span>
+                        <span class="n2">52K</span>
+                        <span class="success">1375%</span>
+                    </div>
+                </a>
+            </div><!--/ Card -->
+            <div class="card"><!-- Card -->
+                <a href="#">
+                    <div>
+                        <span>Retweets</span>
+                        <span class="icon"><i class="fab fa-twitter"></i></span>
+                        <span class="n2">117</span>
+                        <span class="success">303%</span>
+                    </div>
+                </a>
+            </div><!--/ Card -->
+            <div class="card"><!-- Card -->
+                <a href="#">
+                    <div>
+                        <span>Curtidas</span>
+                        <span class="icon"><i class="fab fa-twitter"></i></span>
+                        <span class="n2">507</span>
+                        <span class="success">553%</span>
+                    </div>
+                </a>
+            </div><!--/ Card -->
+            <div class="card"><!-- Card -->
+                <a href="#">
+                    <div>
+                        <span>Curtidas</span>
+                        <span class="icon"><i class="fab fa-youtube-square"></i></span>
+                        <span class="n2">107</span>
+                        <span class="danger">19%</span>
+                    </div>
+                </a>
+            </div><!--/ Card -->
+            <div class="card"><!-- Card -->
+                <a href="#">
+                    <div>
+                        <span>Total de Views</span>
+                        <span class="icon"><i class="fab fa-youtube-square"></i></span>
+                        <span class="n2">1407</span>
+                        <span class="danger">12%</span>
+                    </div>
+                </a>
+            </div><!--/ Card -->
+        </div><!--/ Cards -->
+    </div><!--/ Container -->
+    <footer>
+        <div class="container">
+            <p class="footer-copy">
+                Desafio do <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+                Codificado por <a href="https://github.com/EdivandroLima" target="_blank">Edivandro Lima</a>.
+            </p>
+        </div>
+    </footer>
+    <script>
+        // Alternar Modo Noite
+        function dark() {
+            if (document.body.className != 'dark') {
+                document.body.className='dark'
+                localStorage.setItem('dark', true)
+            }
+            else {
+                document.body.className=''
+                localStorage.setItem('dark', false)
+            }
+        }
+        if (localStorage.getItem('dark') == 'true') {
+            dark()
+        }
+    </script>
+</body>
+</html>
