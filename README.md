@@ -2,7 +2,7 @@
 
 Este é meu envio ao desafio do [Frotend Mentor](https://www.frontendmentor.io/profile/EdivandroLima).
 
-Clique [aqui]() para ver como ficou.
+Clique [aqui](https://fem-painel-de-midia-social.vercel.app/) para ver como ficou.
 
 ## Ferramentas utilizadas
 - [x] HTML5
